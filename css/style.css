@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+/* タイトル */
+h1 {
+  font-size: 64px;
+  margin-top: 100px;
+}
+
+/* 説明文 */
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 20px;
+}
+
+/* ボタン */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #334155;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #475569;
+}
+
+/* ダウンロード */
+.download {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: #22c55e;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download:hover {
+  background: #16a34a;
+}
+
+/* スマホ対応（ちゃんとやるやつ） */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+.list {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #334155;
+}
+
+.item span {
+  width: 30%;
+}
+
+.item a {
+  width: 30%;
+  text-align: center;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.item a:hover {
+  background: #2563eb;
+}

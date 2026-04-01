@@ -1,0 +1,33 @@
+{
+  "software": [
+    {
+      "name": "CHS Tool",
+      "id": "tool1",
+      "versions": [
+        {
+          "version": "1.2",
+          "file": "tool1_v1.2.zip",
+          "date": "2026-04-01",
+          "latest": true
+        },
+        {
+          "version": "1.1",
+          "file": "tool1_v1.1.zip",
+          "date": "2026-03-20"
+        }
+      ]
+    },
+    {
+      "name": "謎ソフト",
+      "id": "tool2",
+      "versions": [
+        {
+          "version": "1.0",
+          "file": "tool2_v1.0.zip",
+          "date": "2026-03-01",
+          "latest": true
+        }
+      ]
+    }
+  ]
+}
