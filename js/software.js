@@ -1,12 +1,13 @@
 // DOMが完全に読み込まれてから実行
 window.addEventListener('DOMContentLoaded', () => {
-
+console.log("software.js読み込み完了");
   // URLからidを取得
   const params = new URLSearchParams(location.search);
   const id = params.get("id");
   console.log("id:", id); // デバッグ用
 
   // JSON読み込み
+  console.log("software.js読み込み完了json前");
   fetch('../data/software.json')
     .then(res => res.json())
     .then(data => {
