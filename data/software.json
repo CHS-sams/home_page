@@ -1,20 +1,15 @@
 {
   "software": [
     {
-      "name": "CHS Tool",
+      "name": "Chanysearcher",
       "id": "tool1",
       "versions": [
         {
-          "version": "1.2",
-          "file": "tool1_v1.2.zip",
-          "date": "2026-04-01",
+          "version": "1.4.0",
+          "file": "CHS1.4.0.zip",
+          "date": "2026-04-02",
           "latest": true
         },
-        {
-          "version": "1.1",
-          "file": "tool1_v1.1.zip",
-          "date": "2026-03-20"
-        }
       ]
     },
     {
