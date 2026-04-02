@@ -1,31 +1,37 @@
-// DOMが完全に読み込まれてから実行
+// DOMのよみこみ
 window.addEventListener('DOMContentLoaded', () => {
 console.log("software.js読み込み完了");
-  // URLからidを取得
   const params = new URLSearchParams(location.search);
   const id = params.get("id");
-  console.log("id:", id); // デバッグ用
+  console.log("id:", id);
 
-  // JSON読み込み
   console.log("software.js読み込み完了json前");
   fetch('../data/software.json')
     .then(res => res.json())
     .then(data => {
 
-      // idに一致するソフトを探す
       const soft = data.software.find(s => s.id === id);
-      console.log("soft:", soft); // デバッグ用
+      console.log("soft:", soft); 
 
-      // 見つからなかった場合は警告
       if (!soft) {
-        document.body.innerHTML = "データが見つからん。社長がサボってる。";
+        document.body.innerHTML = "データが見つかりません。社長(または副社長)がさぼっています";
         return;
       }
 
-      // タイトル表示
       document.getElementById("title").textContent = soft.name;
 
-      // バージョン一覧生成
+      const latestButton = document.getElementById("download-latest");
+      if (latestButton) {
+        const latest = soft.versions.find(v => v.latest);
+        if (latest) {
+          latestButton.addEventListener('click', () => {
+            window.location.href = `../files/${latest.file}`;
+          });
+        } else {
+          latestButton.style.display = 'none';
+        }
+      }
+      // ここからchaTGPt
       const versions = document.getElementById("versions");
       soft.versions.forEach(v => {
         const div = document.createElement("div");
