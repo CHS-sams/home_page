@@ -23,6 +23,18 @@
           "latest": true
         }
       ]
+    },
+    {
+      "name": "CHS-OS",
+      "id": "chs_os",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "file": "chs_os_v1.0.0.img",
+          "date": "2026-07-20",
+          "latest": true
+        }
+      ]
     }
   ]
 }
