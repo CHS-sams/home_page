@@ -29,6 +29,12 @@
       "id": "chs_os",
       "versions": [
         {
+          "version": "まず最初に見る動画",
+          "file": "chsos起動方法.mp4",
+          "date": "2026-07-20",
+          "latest": false
+        },
+        {
           "version": "1.0.0",
           "file": "chs_os_v1.0.0.img",
           "date": "2026-07-20",
